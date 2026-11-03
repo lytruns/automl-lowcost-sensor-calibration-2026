@@ -95,8 +95,7 @@ See `LICENSE`.
 ## How to cite
 
 Rocha, L. A. G., dos Santos Safre, A. L., de Sousa, R. L., Guerrini, I. A. (2026). When is AutoML worth it? Data and
-code [dataset and software]. Zenodo. https://doi.org/10.5281/zenodo.XXXXXXX (replace with the DOI minted by Zenodo for
-the v1.0 release). See also `CITATION.cff`.
+code [dataset and software]. Zenodo. https://doi.org/10.5281/zenodo.23901071. See also `CITATION.cff`.
 
 Corresponding author: Anderson Luiz dos Santos Safre, University of California Agriculture and Natural Resources
 (andersonsafre@ucanr.edu).
