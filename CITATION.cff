@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this dataset or code, please cite it as below and cite the associated article."
+title: "When is AutoML worth it? Data and code for the temporal validation and metrological assessment of low-cost greenhouse sensor calibration"
+type: dataset
+version: "1.0"
+date-released: "2026-11-02"
+license: MIT
+authors:
+  - family-names: "Rocha"
+    given-names: "Luís Augusto Gomes"
+    orcid: "https://orcid.org/0000-0002-0539-5879"
+    affiliation: "Ministério Público do Estado de São Paulo; São Paulo State University (UNESP), Botucatu, Brazil"
+  - family-names: "dos Santos Safre"
+    given-names: "Anderson Luiz"
+    orcid: "https://orcid.org/0000-0001-8334-5976"
+    affiliation: "Division of Agriculture and Natural Resources, University of California, Davis, CA, USA"
+  - family-names: "de Sousa"
+    given-names: "Renan Lima"
+    orcid: "https://orcid.org/0000-0003-2168-8249"
+    affiliation: "São Paulo State University (UNESP), Botucatu, Brazil"
+  - family-names: "Guerrini"
+    given-names: "Iraê Amaral"
+    orcid: "https://orcid.org/0000-0002-1336-0318"
+    affiliation: "São Paulo State University (UNESP), Botucatu; University of São Paulo (ESALQ/USP), Piracicaba, Brazil"
+keywords:
+  - low-cost sensors
+  - sensor calibration
+  - AutoML
+  - temporal validation
+  - practical equivalence
+  - greenhouse microclimate
+repository-code: "https://github.com/lytruns/automl-lowcost-sensor-calibration-2026"
+doi: "10.5281/zenodo.XXXXXXX"

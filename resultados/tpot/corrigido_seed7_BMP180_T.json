@@ -1,0 +1,57 @@
+{
+  "sensor": "BMP180_T",
+  "target": "temp",
+  "seed": 7,
+  "R2_hold": 0.9591983723452858,
+  "MAE_hold": 0.36917994298613127,
+  "RMSE_hold": 0.5845704810435516,
+  "R2_train": 0.9999999973139806,
+  "MAE_train": 1.1173184357543647e-05,
+  "RMSE_train": 0.00023635972962356968,
+  "overfit_gap": 0.04080162496869477,
+  "n_generations": 6,
+  "n_evaluated": 300,
+  "history": [
+    {
+      "gen": 0,
+      "best_so_far": 0.885686,
+      "mean": 0.62851,
+      "n": 42
+    },
+    {
+      "gen": 1,
+      "best_so_far": 0.90118,
+      "mean": 0.71875,
+      "n": 47
+    },
+    {
+      "gen": 2,
+      "best_so_far": 0.90118,
+      "mean": 0.846309,
+      "n": 45
+    },
+    {
+      "gen": 3,
+      "best_so_far": 0.90118,
+      "mean": 0.735393,
+      "n": 45
+    },
+    {
+      "gen": 4,
+      "best_so_far": 0.90118,
+      "mean": 0.849874,
+      "n": 47
+    },
+    {
+      "gen": 5,
+      "best_so_far": 0.90118,
+      "mean": 0.864454,
+      "n": 43
+    }
+  ],
+  "duration_s": 350.6,
+  "pipeline": "Pipeline(steps=[('passthrough', Passthrough()),\n                ('variancethreshold',\n                 VarianceThreshold(threshold=0.0636907948942)),\n                ('featureunion',\n                 FeatureUnion(transformer_list=[('skiptransformer',\n                                                 SkipTransformer()),\n                                                ('passthrough',\n                                                 Passthrough())])),\n                ('kneighborsregressor',\n                 KNeighborsRegressor(n_jobs=1, n_neighbors=26, p=1,\n                                     weights=np.str_('distance')))])",
+  "tpot_version": "1.1.0",
+  "sklearn_version": "1.7.2",
+  "dataset": "corrigido"
+}

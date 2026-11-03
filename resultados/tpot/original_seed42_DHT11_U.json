@@ -1,0 +1,87 @@
+{
+  "sensor": "DHT11_U",
+  "target": "umid",
+  "seed": 42,
+  "R2_hold": 0.7345553943244051,
+  "MAE_hold": 4.527437097018547,
+  "RMSE_hold": 5.293988904433257,
+  "R2_train": 0.8698647116508169,
+  "MAE_train": 4.204835971818854,
+  "RMSE_train": 5.585600048068755,
+  "overfit_gap": 0.13530931732641183,
+  "n_generations": 11,
+  "n_evaluated": 550,
+  "history": [
+    {
+      "gen": 0,
+      "best_so_far": 0.65121,
+      "mean": -2.40323,
+      "n": 41
+    },
+    {
+      "gen": 1,
+      "best_so_far": 0.65121,
+      "mean": 0.280419,
+      "n": 50
+    },
+    {
+      "gen": 2,
+      "best_so_far": 0.660112,
+      "mean": 0.097442,
+      "n": 49
+    },
+    {
+      "gen": 3,
+      "best_so_far": 0.660112,
+      "mean": 0.51147,
+      "n": 50
+    },
+    {
+      "gen": 4,
+      "best_so_far": 0.660402,
+      "mean": 0.30987,
+      "n": 48
+    },
+    {
+      "gen": 5,
+      "best_so_far": 0.660833,
+      "mean": 0.601533,
+      "n": 48
+    },
+    {
+      "gen": 6,
+      "best_so_far": 0.662998,
+      "mean": 0.094384,
+      "n": 50
+    },
+    {
+      "gen": 7,
+      "best_so_far": 0.663237,
+      "mean": 0.48467,
+      "n": 48
+    },
+    {
+      "gen": 8,
+      "best_so_far": 0.663237,
+      "mean": 0.547793,
+      "n": 50
+    },
+    {
+      "gen": 9,
+      "best_so_far": 0.663827,
+      "mean": 0.61836,
+      "n": 49
+    },
+    {
+      "gen": 10,
+      "best_so_far": 0.663836,
+      "mean": -0.213928,
+      "n": 48
+    }
+  ],
+  "duration_s": 388.2,
+  "pipeline": "Pipeline(steps=[('robustscaler',\n                 RobustScaler(quantile_range=(0.0334812202662,\n                                              0.9700414080547))),\n                ('selectfrommodel',\n                 SelectFromModel(estimator=ExtraTreesRegressor(bootstrap=np.True_,\n                                                               criterion=np.str_('poisson'),\n                                                               max_features=0.2255244331131,\n                                                               min_samples_leaf=3,\n                                                               min_samples_split=18,\n                                                               n_jobs=1,\n                                                               random_state=42),\n                                 threshold=0.0022066051407)),\n                ('featureunion',\n                 Fe...\n                                                 FeatureUnion(transformer_list=[('zerocount',\n                                                                                 ZeroCount()),\n                                                                                ('quantiletransformer',\n                                                                                 QuantileTransformer(n_quantiles=941,\n                                                                                                     output_distribution=np.str_('normal'),\n                                                                                                     random_state=42))])),\n                                                ('passthrough',\n                                                 Passthrough())])),\n                ('ardregression',\n                 ARDRegression(alpha_1=1.8144e-08, alpha_2=6.28068242e-05,\n                               lambda_1=1.666e-10, lambda_2=1.07683892e-05,\n                               threshold_lambda=88788))])",
+  "tpot_version": "1.1.0",
+  "sklearn_version": "1.7.2",
+  "dataset": "original"
+}

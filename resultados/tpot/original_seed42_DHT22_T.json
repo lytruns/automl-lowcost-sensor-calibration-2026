@@ -1,0 +1,57 @@
+{
+  "sensor": "DHT22_T",
+  "target": "temp",
+  "seed": 42,
+  "R2_hold": 0.8005715221092429,
+  "MAE_hold": 1.1058083670545062,
+  "RMSE_hold": 1.2923844508854017,
+  "R2_train": 0.9090207696043375,
+  "MAE_train": 1.0973368626175215,
+  "RMSE_train": 1.3858891822222092,
+  "overfit_gap": 0.10844924749509466,
+  "n_generations": 6,
+  "n_evaluated": 300,
+  "history": [
+    {
+      "gen": 0,
+      "best_so_far": 0.788087,
+      "mean": -1.904898,
+      "n": 37
+    },
+    {
+      "gen": 1,
+      "best_so_far": 0.800707,
+      "mean": 0.55607,
+      "n": 49
+    },
+    {
+      "gen": 2,
+      "best_so_far": 0.800707,
+      "mean": 0.748449,
+      "n": 48
+    },
+    {
+      "gen": 3,
+      "best_so_far": 0.800707,
+      "mean": 0.771731,
+      "n": 49
+    },
+    {
+      "gen": 4,
+      "best_so_far": 0.800707,
+      "mean": 0.456446,
+      "n": 49
+    },
+    {
+      "gen": 5,
+      "best_so_far": 0.800707,
+      "mean": 0.770467,
+      "n": 50
+    }
+  ],
+  "duration_s": 232.0,
+  "pipeline": "Pipeline(steps=[('robustscaler',\n                 RobustScaler(quantile_range=(0.2475272883589,\n                                              0.7121228832614))),\n                ('selectfwe', SelectFwe(alpha=0.0007015659285)),\n                ('featureunion',\n                 FeatureUnion(transformer_list=[('skiptransformer',\n                                                 SkipTransformer()),\n                                                ('passthrough',\n                                                 Passthrough())])),\n                ('adaboostregressor',\n                 AdaBoostRegressor(learning_rate=1.2839177552739,\n                                   loss=np.str_('linear'), n_estimators=437,\n                                   random_state=42))])",
+  "tpot_version": "1.1.0",
+  "sklearn_version": "1.7.2",
+  "dataset": "original"
+}

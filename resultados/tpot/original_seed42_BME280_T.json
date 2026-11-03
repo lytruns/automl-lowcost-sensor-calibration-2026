@@ -1,0 +1,111 @@
+{
+  "sensor": "BME280_T",
+  "target": "temp",
+  "seed": 42,
+  "R2_hold": 0.8299059453905366,
+  "MAE_hold": 0.9133633086768569,
+  "RMSE_hold": 1.193555734790788,
+  "R2_train": 0.9183778753757901,
+  "MAE_train": 1.0206555606067214,
+  "RMSE_train": 1.3126874194968108,
+  "overfit_gap": 0.08847192998525344,
+  "n_generations": 15,
+  "n_evaluated": 750,
+  "history": [
+    {
+      "gen": 0,
+      "best_so_far": 0.794975,
+      "mean": -2.714397,
+      "n": 36
+    },
+    {
+      "gen": 1,
+      "best_so_far": 0.808251,
+      "mean": 0.255725,
+      "n": 47
+    },
+    {
+      "gen": 2,
+      "best_so_far": 0.812806,
+      "mean": 0.775151,
+      "n": 48
+    },
+    {
+      "gen": 3,
+      "best_so_far": 0.815993,
+      "mean": 0.79158,
+      "n": 46
+    },
+    {
+      "gen": 4,
+      "best_so_far": 0.818405,
+      "mean": 0.503468,
+      "n": 48
+    },
+    {
+      "gen": 5,
+      "best_so_far": 0.818405,
+      "mean": 0.517635,
+      "n": 48
+    },
+    {
+      "gen": 6,
+      "best_so_far": 0.82337,
+      "mean": -0.149244,
+      "n": 49
+    },
+    {
+      "gen": 7,
+      "best_so_far": 0.82337,
+      "mean": 0.258657,
+      "n": 45
+    },
+    {
+      "gen": 8,
+      "best_so_far": 0.82337,
+      "mean": -0.847028,
+      "n": 45
+    },
+    {
+      "gen": 9,
+      "best_so_far": 0.82337,
+      "mean": 0.782791,
+      "n": 49
+    },
+    {
+      "gen": 10,
+      "best_so_far": 0.826084,
+      "mean": 0.152159,
+      "n": 46
+    },
+    {
+      "gen": 11,
+      "best_so_far": 0.826084,
+      "mean": 0.75522,
+      "n": 46
+    },
+    {
+      "gen": 12,
+      "best_so_far": 0.828888,
+      "mean": -0.362683,
+      "n": 47
+    },
+    {
+      "gen": 13,
+      "best_so_far": 0.828888,
+      "mean": 0.775414,
+      "n": 49
+    },
+    {
+      "gen": 14,
+      "best_so_far": 0.828888,
+      "mean": 0.798294,
+      "n": 49
+    }
+  ],
+  "duration_s": 865.4,
+  "pipeline": "Pipeline(steps=[('robustscaler',\n                 RobustScaler(quantile_range=(0.0211743878029,\n                                              0.8124435366897))),\n                ('selectfwe', SelectFwe(alpha=0.0007763827819)),\n                ('featureunion',\n                 FeatureUnion(transformer_list=[('skiptransformer',\n                                                 SkipTransformer()),\n                                                ('passthrough',\n                                                 Passthrough())])),\n                ('adaboostregressor',\n                 AdaBoostRegressor(learning_rate=0.6368326844558,\n                                   loss=np.str_('square'), n_estimators=119,\n                                   random_state=42))])",
+  "tpot_version": "1.1.0",
+  "sklearn_version": "1.7.2",
+  "dataset": "original"
+}

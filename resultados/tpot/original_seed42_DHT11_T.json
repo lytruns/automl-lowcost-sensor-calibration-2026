@@ -1,0 +1,81 @@
+{
+  "sensor": "DHT11_T",
+  "target": "temp",
+  "seed": 42,
+  "R2_hold": 0.8492099490959977,
+  "MAE_hold": 1.0185860393907846,
+  "RMSE_hold": 1.1237882342883332,
+  "R2_train": 0.9024137265244256,
+  "MAE_train": 1.0500847786916394,
+  "RMSE_train": 1.4353299346356454,
+  "overfit_gap": 0.05320377742842797,
+  "n_generations": 10,
+  "n_evaluated": 500,
+  "history": [
+    {
+      "gen": 0,
+      "best_so_far": 0.799172,
+      "mean": -1.664429,
+      "n": 39
+    },
+    {
+      "gen": 1,
+      "best_so_far": 0.803726,
+      "mean": -573.358741,
+      "n": 48
+    },
+    {
+      "gen": 2,
+      "best_so_far": 0.803726,
+      "mean": 0.781698,
+      "n": 49
+    },
+    {
+      "gen": 3,
+      "best_so_far": 0.809188,
+      "mean": 0.712062,
+      "n": 49
+    },
+    {
+      "gen": 4,
+      "best_so_far": 0.809188,
+      "mean": 0.683257,
+      "n": 50
+    },
+    {
+      "gen": 5,
+      "best_so_far": 0.813385,
+      "mean": 0.577333,
+      "n": 48
+    },
+    {
+      "gen": 6,
+      "best_so_far": 0.813385,
+      "mean": -1.720618,
+      "n": 49
+    },
+    {
+      "gen": 7,
+      "best_so_far": 0.813603,
+      "mean": 0.738229,
+      "n": 45
+    },
+    {
+      "gen": 8,
+      "best_so_far": 0.81613,
+      "mean": 0.409094,
+      "n": 50
+    },
+    {
+      "gen": 9,
+      "best_so_far": 0.81613,
+      "mean": -2344.810866,
+      "n": 14
+    }
+  ],
+  "duration_s": 1220.8,
+  "pipeline": "Pipeline(steps=[('minmaxscaler', MinMaxScaler()),\n                ('variancethreshold',\n                 VarianceThreshold(threshold=0.0427954097266)),\n                ('featureunion',\n                 FeatureUnion(transformer_list=[('skiptransformer',\n                                                 SkipTransformer()),\n                                                ('passthrough',\n                                                 Passthrough())])),\n                ('mlpregressor',\n                 MLPRegressor(activation=np.str_('relu'), alpha=5.033347e-07,\n                              early_stopping=np.False_,\n                              hidden_layer_sizes=[362, 362],\n                              learning_rate=np.str_('invscaling'),\n                              learning_rate_init=0.0088231973195,\n                              n_iter_no_change=32, random_state=42))])",
+  "tpot_version": "1.1.0",
+  "sklearn_version": "1.7.2",
+  "dataset": "original"
+}

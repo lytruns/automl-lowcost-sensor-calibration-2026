@@ -1,0 +1,63 @@
+{
+  "sensor": "DHT22_U",
+  "target": "umid",
+  "seed": 7,
+  "R2_hold": 0.942717627847464,
+  "MAE_hold": 1.96580551242236,
+  "RMSE_hold": 2.4592720383165947,
+  "R2_train": 0.9745339423059687,
+  "MAE_train": 1.6479373330094726,
+  "RMSE_train": 2.4490625740752887,
+  "overfit_gap": 0.031816314458504635,
+  "n_generations": 7,
+  "n_evaluated": 350,
+  "history": [
+    {
+      "gen": 0,
+      "best_so_far": 0.88755,
+      "mean": 0.585802,
+      "n": 44
+    },
+    {
+      "gen": 1,
+      "best_so_far": 0.88755,
+      "mean": 0.67083,
+      "n": 48
+    },
+    {
+      "gen": 2,
+      "best_so_far": 0.888935,
+      "mean": -1186.960517,
+      "n": 49
+    },
+    {
+      "gen": 3,
+      "best_so_far": 0.889091,
+      "mean": 0.852161,
+      "n": 50
+    },
+    {
+      "gen": 4,
+      "best_so_far": 0.889091,
+      "mean": 0.859979,
+      "n": 47
+    },
+    {
+      "gen": 5,
+      "best_so_far": 0.889743,
+      "mean": 0.801674,
+      "n": 47
+    },
+    {
+      "gen": 6,
+      "best_so_far": 0.890187,
+      "mean": 0.818953,
+      "n": 49
+    }
+  ],
+  "duration_s": 196.7,
+  "pipeline": "Pipeline(steps=[('maxabsscaler', MaxAbsScaler()),\n                ('selectfwe', SelectFwe(alpha=0.0090582482604)),\n                ('featureunion',\n                 FeatureUnion(transformer_list=[('featureunion',\n                                                 FeatureUnion(transformer_list=[('zerocount',\n                                                                                 ZeroCount())])),\n                                                ('passthrough',\n                                                 Passthrough())])),\n                ('kneighborsregressor',\n                 KNeighborsRegressor(n_jobs=1, n_neighbors=23, p=3,\n                                     weights=np.str_('uniform')))])",
+  "tpot_version": "1.1.0",
+  "sklearn_version": "1.7.2",
+  "dataset": "corrigido"
+}

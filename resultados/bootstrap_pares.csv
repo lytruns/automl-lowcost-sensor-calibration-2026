@@ -1,0 +1,49 @@
+sensor,model_a,model_b,dMAE_a_minus_b,ci_lo,ci_hi,verdict
+BMP180_T,linear,quadratic,0.4192,0.2816,0.5835,quadratic better
+BMP180_T,linear,RF,0.5150,0.3272,0.7263,RF better
+BMP180_T,linear,TPOT-TS,0.5154,0.3322,0.7273,TPOT-TS better
+BMP180_T,quadratic,RF,0.0958,-0.0086,0.2077,equivalent
+BMP180_T,quadratic,TPOT-TS,0.0962,-0.0207,0.2203,equivalent
+BMP180_T,RF,TPOT-TS,0.0004,-0.0937,0.0885,equivalent
+BME280_T,linear,quadratic,0.4471,0.2953,0.6181,quadratic better
+BME280_T,linear,RF,0.5334,0.3488,0.7511,RF better
+BME280_T,linear,TPOT-TS,0.2877,0.0176,0.5455,TPOT-TS better
+BME280_T,quadratic,RF,0.0863,-0.0151,0.1949,equivalent
+BME280_T,quadratic,TPOT-TS,-0.1594,-0.4021,0.0412,equivalent
+BME280_T,RF,TPOT-TS,-0.2457,-0.4697,-0.0767,RF better
+DHT22_T,linear,quadratic,0.3165,0.1997,0.4564,quadratic better
+DHT22_T,linear,RF,0.3692,0.2197,0.5381,RF better
+DHT22_T,linear,TPOT-TS,0.3890,0.2380,0.5549,TPOT-TS better
+DHT22_T,quadratic,RF,0.0527,-0.0533,0.1585,equivalent
+DHT22_T,quadratic,TPOT-TS,0.0725,-0.0358,0.1779,equivalent
+DHT22_T,RF,TPOT-TS,0.0198,0.0002,0.0407,TPOT-TS better
+LM35_T,linear,quadratic,0.2541,0.1679,0.3620,quadratic better
+LM35_T,linear,RF,0.3277,0.2125,0.4652,RF better
+LM35_T,linear,TPOT-TS,0.3450,0.2295,0.4891,TPOT-TS better
+LM35_T,quadratic,RF,0.0735,-0.0206,0.1673,equivalent
+LM35_T,quadratic,TPOT-TS,0.0909,-0.0007,0.1879,equivalent
+LM35_T,RF,TPOT-TS,0.0174,-0.0174,0.0595,equivalent
+DHT11_T,linear,quadratic,0.1864,0.0883,0.3168,quadratic better
+DHT11_T,linear,RF,0.3101,0.1740,0.4902,RF better
+DHT11_T,linear,TPOT-TS,0.1880,0.0534,0.3492,TPOT-TS better
+DHT11_T,quadratic,RF,0.1237,0.0213,0.2272,RF better
+DHT11_T,quadratic,TPOT-TS,0.0016,-0.1217,0.1066,equivalent
+DHT11_T,RF,TPOT-TS,-0.1221,-0.2143,-0.0464,RF better
+BME280_U,linear,quadratic,0.0707,-0.5267,0.6389,equivalent
+BME280_U,linear,RF,0.8026,0.3494,1.3192,RF better
+BME280_U,linear,TPOT-TS,1.0212,0.4434,1.6940,TPOT-TS better
+BME280_U,quadratic,RF,0.7319,0.4135,1.1248,RF better
+BME280_U,quadratic,TPOT-TS,0.9505,0.6096,1.3593,TPOT-TS better
+BME280_U,RF,TPOT-TS,0.2186,-0.0421,0.4828,equivalent
+DHT22_U,linear,quadratic,-0.8838,-1.5383,-0.3266,linear better
+DHT22_U,linear,RF,0.0390,-0.2547,0.3227,equivalent
+DHT22_U,linear,TPOT-TS,-0.9049,-1.6595,-0.2043,linear better
+DHT22_U,quadratic,RF,0.9229,0.3563,1.6165,RF better
+DHT22_U,quadratic,TPOT-TS,-0.0211,-0.3953,0.4260,equivalent
+DHT22_U,RF,TPOT-TS,-0.9439,-1.6734,-0.2791,RF better
+DHT11_U,linear,quadratic,0.2410,-0.2402,0.7155,equivalent
+DHT11_U,linear,RF,0.4999,0.0709,0.9522,RF better
+DHT11_U,linear,TPOT-TS,0.3512,-0.1030,0.8293,equivalent
+DHT11_U,quadratic,RF,0.2589,0.0298,0.5226,RF better
+DHT11_U,quadratic,TPOT-TS,0.1103,-0.1081,0.3685,equivalent
+DHT11_U,RF,TPOT-TS,-0.1487,-0.3267,0.0321,equivalent

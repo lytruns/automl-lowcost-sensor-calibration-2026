@@ -1,0 +1,75 @@
+{
+  "sensor": "DHT11_U",
+  "target": "umid",
+  "seed": 42,
+  "R2_hold": 0.9466935336358951,
+  "MAE_hold": 1.8951622396194459,
+  "RMSE_hold": 2.372389656908807,
+  "R2_train": 0.9911974435160613,
+  "MAE_train": 1.020694069483542,
+  "RMSE_train": 1.439870495103469,
+  "overfit_gap": 0.04450390988016617,
+  "n_generations": 9,
+  "n_evaluated": 450,
+  "history": [
+    {
+      "gen": 0,
+      "best_so_far": 0.886813,
+      "mean": -1.24087,
+      "n": 41
+    },
+    {
+      "gen": 1,
+      "best_so_far": 0.891059,
+      "mean": 0.094772,
+      "n": 44
+    },
+    {
+      "gen": 2,
+      "best_so_far": 0.891575,
+      "mean": 0.814989,
+      "n": 48
+    },
+    {
+      "gen": 3,
+      "best_so_far": 0.892114,
+      "mean": 0.246469,
+      "n": 49
+    },
+    {
+      "gen": 4,
+      "best_so_far": 0.895284,
+      "mean": 0.759676,
+      "n": 49
+    },
+    {
+      "gen": 5,
+      "best_so_far": 0.895284,
+      "mean": 0.506644,
+      "n": 49
+    },
+    {
+      "gen": 6,
+      "best_so_far": 0.895284,
+      "mean": -0.50741,
+      "n": 50
+    },
+    {
+      "gen": 7,
+      "best_so_far": 0.895284,
+      "mean": 0.802333,
+      "n": 49
+    },
+    {
+      "gen": 8,
+      "best_so_far": 0.895688,
+      "mean": 0.546421,
+      "n": 49
+    }
+  ],
+  "duration_s": 409.5,
+  "pipeline": "Pipeline(steps=[('maxabsscaler', MaxAbsScaler()),\n                ('passthrough', Passthrough()),\n                ('featureunion',\n                 FeatureUnion(transformer_list=[('featureunion',\n                                                 FeatureUnion(transformer_list=[('fastica',\n                                                                                 FastICA(algorithm=np.str_('parallel'),\n                                                                                         n_components=7,\n                                                                                         random_state=42))])),\n                                                ('passthrough',\n                                                 Passthrough())])),\n                ('lgbmregressor',\n                 LGBMRegressor(boosting_type=np.str_('gbdt'), max_depth=6,\n                               n_estimators=53, n_jobs=1, num_leaves=210,\n                               random_state=42, verbose=-1))])",
+  "tpot_version": "1.1.0",
+  "sklearn_version": "1.7.2",
+  "dataset": "corrigido"
+}

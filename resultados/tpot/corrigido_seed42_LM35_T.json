@@ -1,0 +1,111 @@
+{
+  "sensor": "LM35_T",
+  "target": "temp",
+  "seed": 42,
+  "R2_hold": 0.9737243406891839,
+  "MAE_hold": 0.3228534012370489,
+  "RMSE_hold": 0.4691102777687579,
+  "R2_train": 0.9999767478976879,
+  "MAE_train": 0.002985900505453597,
+  "RMSE_train": 0.021991255608178942,
+  "overfit_gap": 0.02625240720850397,
+  "n_generations": 15,
+  "n_evaluated": 750,
+  "history": [
+    {
+      "gen": 0,
+      "best_so_far": 0.900384,
+      "mean": -1.753054,
+      "n": 38
+    },
+    {
+      "gen": 1,
+      "best_so_far": 0.91241,
+      "mean": 0.704897,
+      "n": 49
+    },
+    {
+      "gen": 2,
+      "best_so_far": 0.91241,
+      "mean": 0.655849,
+      "n": 49
+    },
+    {
+      "gen": 3,
+      "best_so_far": 0.915667,
+      "mean": 0.851491,
+      "n": 49
+    },
+    {
+      "gen": 4,
+      "best_so_far": 0.915667,
+      "mean": -622.767329,
+      "n": 49
+    },
+    {
+      "gen": 5,
+      "best_so_far": 0.915667,
+      "mean": 0.855222,
+      "n": 48
+    },
+    {
+      "gen": 6,
+      "best_so_far": 0.916152,
+      "mean": 0.869564,
+      "n": 47
+    },
+    {
+      "gen": 7,
+      "best_so_far": 0.919343,
+      "mean": 0.886083,
+      "n": 48
+    },
+    {
+      "gen": 8,
+      "best_so_far": 0.919343,
+      "mean": -1651.094212,
+      "n": 50
+    },
+    {
+      "gen": 9,
+      "best_so_far": 0.919572,
+      "mean": 0.870911,
+      "n": 50
+    },
+    {
+      "gen": 10,
+      "best_so_far": 0.922426,
+      "mean": -0.06155,
+      "n": 49
+    },
+    {
+      "gen": 11,
+      "best_so_far": 0.922426,
+      "mean": 0.850071,
+      "n": 47
+    },
+    {
+      "gen": 12,
+      "best_so_far": 0.922426,
+      "mean": 0.891517,
+      "n": 47
+    },
+    {
+      "gen": 13,
+      "best_so_far": 0.922426,
+      "mean": 0.88968,
+      "n": 48
+    },
+    {
+      "gen": 14,
+      "best_so_far": 0.922768,
+      "mean": -0.080837,
+      "n": 46
+    }
+  ],
+  "duration_s": 888.9,
+  "pipeline": "Pipeline(steps=[('passthrough', Passthrough()),\n                ('variancethreshold',\n                 VarianceThreshold(threshold=0.0602296631824)),\n                ('featureunion',\n                 FeatureUnion(transformer_list=[('skiptransformer',\n                                                 SkipTransformer()),\n                                                ('passthrough',\n                                                 Passthrough())])),\n                ('kneighborsregressor',\n                 KNeighborsRegressor(n_jobs=1, n_neighbors=32,\n                                     weights=np.str_('distance')))])",
+  "tpot_version": "1.1.0",
+  "sklearn_version": "1.7.2",
+  "dataset": "corrigido"
+}

@@ -1,0 +1,111 @@
+{
+  "sensor": "DHT11_U",
+  "target": "umid",
+  "seed": 123,
+  "R2_hold": 0.9477543634852141,
+  "MAE_hold": 1.9064178571428638,
+  "RMSE_hold": 2.348665059757164,
+  "R2_train": 0.9863686064226562,
+  "MAE_train": 1.1730573184357556,
+  "RMSE_train": 1.7917984266633629,
+  "overfit_gap": 0.03861424293744209,
+  "n_generations": 15,
+  "n_evaluated": 750,
+  "history": [
+    {
+      "gen": 0,
+      "best_so_far": 0.863024,
+      "mean": -1.290611,
+      "n": 42
+    },
+    {
+      "gen": 1,
+      "best_so_far": 0.877389,
+      "mean": 0.172971,
+      "n": 49
+    },
+    {
+      "gen": 2,
+      "best_so_far": 0.884352,
+      "mean": 0.776439,
+      "n": 50
+    },
+    {
+      "gen": 3,
+      "best_so_far": 0.884534,
+      "mean": 0.244004,
+      "n": 50
+    },
+    {
+      "gen": 4,
+      "best_so_far": 0.884534,
+      "mean": 0.81107,
+      "n": 49
+    },
+    {
+      "gen": 5,
+      "best_so_far": 0.887661,
+      "mean": 0.856237,
+      "n": 50
+    },
+    {
+      "gen": 6,
+      "best_so_far": 0.887661,
+      "mean": 0.86629,
+      "n": 49
+    },
+    {
+      "gen": 7,
+      "best_so_far": 0.887661,
+      "mean": 0.808279,
+      "n": 50
+    },
+    {
+      "gen": 8,
+      "best_so_far": 0.887661,
+      "mean": 0.175113,
+      "n": 49
+    },
+    {
+      "gen": 9,
+      "best_so_far": 0.890817,
+      "mean": 0.819845,
+      "n": 49
+    },
+    {
+      "gen": 10,
+      "best_so_far": 0.890817,
+      "mean": 0.845703,
+      "n": 50
+    },
+    {
+      "gen": 11,
+      "best_so_far": 0.893758,
+      "mean": 0.778228,
+      "n": 50
+    },
+    {
+      "gen": 12,
+      "best_so_far": 0.893758,
+      "mean": 0.842289,
+      "n": 49
+    },
+    {
+      "gen": 13,
+      "best_so_far": 0.893758,
+      "mean": 0.812383,
+      "n": 49
+    },
+    {
+      "gen": 14,
+      "best_so_far": 0.893758,
+      "mean": 0.54442,
+      "n": 50
+    }
+  ],
+  "duration_s": 780.2,
+  "pipeline": "Pipeline(steps=[('standardscaler', StandardScaler()),\n                ('selectfwe', SelectFwe(alpha=0.0006340005796)),\n                ('featureunion',\n                 FeatureUnion(transformer_list=[('featureunion',\n                                                 FeatureUnion(transformer_list=[('fastica',\n                                                                                 FastICA(algorithm=np.str_('deflation'),\n                                                                                         n_components=96,\n                                                                                         random_state=123))])),\n                                                ('passthrough',\n                                                 Passthrough())])),\n                ('randomforestregressor',\n                 RandomForestRegressor(bootstrap=np.False_,\n                                       criterion=np.str_('absolute_error'),\n                                       max_features=0.4451957166267,\n                                       min_samples_leaf=10,\n                                       min_samples_split=11, n_jobs=1,\n                                       random_state=123))])",
+  "tpot_version": "1.1.0",
+  "sklearn_version": "1.7.2",
+  "dataset": "corrigido"
+}

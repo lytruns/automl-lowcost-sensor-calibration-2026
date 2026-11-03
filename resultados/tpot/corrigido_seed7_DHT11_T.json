@@ -1,0 +1,69 @@
+{
+  "sensor": "DHT11_T",
+  "target": "temp",
+  "seed": 7,
+  "R2_hold": 0.928732205739294,
+  "MAE_hold": 0.6728676465621104,
+  "RMSE_hold": 0.7725823739673225,
+  "R2_train": 0.9368783099079137,
+  "MAE_train": 0.9234115457232653,
+  "RMSE_train": 1.1457984308708609,
+  "overfit_gap": 0.008146104168619606,
+  "n_generations": 8,
+  "n_evaluated": 400,
+  "history": [
+    {
+      "gen": 0,
+      "best_so_far": 0.92018,
+      "mean": 0.687679,
+      "n": 43
+    },
+    {
+      "gen": 1,
+      "best_so_far": 0.923266,
+      "mean": 0.797817,
+      "n": 47
+    },
+    {
+      "gen": 2,
+      "best_so_far": 0.923266,
+      "mean": 0.718075,
+      "n": 46
+    },
+    {
+      "gen": 3,
+      "best_so_far": 0.936267,
+      "mean": 0.853932,
+      "n": 49
+    },
+    {
+      "gen": 4,
+      "best_so_far": 0.936267,
+      "mean": 0.889957,
+      "n": 49
+    },
+    {
+      "gen": 5,
+      "best_so_far": 0.936267,
+      "mean": 0.377777,
+      "n": 48
+    },
+    {
+      "gen": 6,
+      "best_so_far": 0.936267,
+      "mean": -3.252274,
+      "n": 48
+    },
+    {
+      "gen": 7,
+      "best_so_far": 0.936267,
+      "mean": 0.831251,
+      "n": 49
+    }
+  ],
+  "duration_s": 216.3,
+  "pipeline": "Pipeline(steps=[('passthrough', Passthrough()),\n                ('selectpercentile',\n                 SelectPercentile(percentile=93.2020326979818)),\n                ('featureunion',\n                 FeatureUnion(transformer_list=[('featureunion',\n                                                 FeatureUnion(transformer_list=[('rbfsampler',\n                                                                                 RBFSampler(gamma=0.1040345339162,\n                                                                                            n_components=2,\n                                                                                            random_state=7))])),\n                                                ('passthrough',\n                                                 Passthrough())])),\n                ('linearsvr',\n                 LinearSVR(C=20726.893488573747, epsilon=0.0309170471656,\n                           loss=np.str_('epsilon_insensitive'),\n                           random_state=7))])",
+  "tpot_version": "1.1.0",
+  "sklearn_version": "1.7.2",
+  "dataset": "corrigido"
+}

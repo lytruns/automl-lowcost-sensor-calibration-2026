@@ -1,0 +1,81 @@
+{
+  "sensor": "DHT22_U",
+  "target": "umid",
+  "seed": 42,
+  "R2_hold": 0.9555422676581741,
+  "MAE_hold": 1.7767753857102035,
+  "RMSE_hold": 2.1665550480476137,
+  "R2_train": 0.9806438975941214,
+  "MAE_train": 1.6807274699692205,
+  "RMSE_train": 2.135147969755925,
+  "overfit_gap": 0.025101629935947334,
+  "n_generations": 10,
+  "n_evaluated": 500,
+  "history": [
+    {
+      "gen": 0,
+      "best_so_far": 0.891855,
+      "mean": -1.154946,
+      "n": 41
+    },
+    {
+      "gen": 1,
+      "best_so_far": 0.891855,
+      "mean": 0.493132,
+      "n": 48
+    },
+    {
+      "gen": 2,
+      "best_so_far": 0.891855,
+      "mean": 0.780349,
+      "n": 50
+    },
+    {
+      "gen": 3,
+      "best_so_far": 0.894054,
+      "mean": 0.868416,
+      "n": 47
+    },
+    {
+      "gen": 4,
+      "best_so_far": 0.894804,
+      "mean": 0.852584,
+      "n": 50
+    },
+    {
+      "gen": 5,
+      "best_so_far": 0.894804,
+      "mean": 0.834259,
+      "n": 48
+    },
+    {
+      "gen": 6,
+      "best_so_far": 0.895085,
+      "mean": 0.870449,
+      "n": 49
+    },
+    {
+      "gen": 7,
+      "best_so_far": 0.903652,
+      "mean": 0.715672,
+      "n": 50
+    },
+    {
+      "gen": 8,
+      "best_so_far": 0.903652,
+      "mean": 0.492566,
+      "n": 48
+    },
+    {
+      "gen": 9,
+      "best_so_far": 0.903652,
+      "mean": 0.854335,
+      "n": 16
+    }
+  ],
+  "duration_s": 1229.7,
+  "pipeline": "Pipeline(steps=[('passthrough', Passthrough()),\n                ('variancethreshold',\n                 VarianceThreshold(threshold=0.0001126824111)),\n                ('featureunion',\n                 FeatureUnion(transformer_list=[('featureunion',\n                                                 FeatureUnion(transformer_list=[('quantiletransformer',\n                                                                                 QuantileTransformer(n_quantiles=113,\n                                                                                                     output_distribution=np.str_('normal'),\n                                                                                                     random_state=42)),\n                                                                                ('fastica',\n                                                                                 FastICA(algorithm=np.str_('deflation'),\n                                                                                         n_components=31,\n                                                                                         random_state=42))])),\n                                                ('passthrough',\n                                                 Passthrough())])),\n                ('mlpregressor',\n                 MLPRegressor(activation=np.str_('relu'), alpha=1.2128444e-06,\n                              early_stopping=np.False_,\n                              hidden_layer_sizes=[497, 497, 497],\n                              learning_rate=np.str_('constant'),\n                              learning_rate_init=0.0110098605444,\n                              n_iter_no_change=32, random_state=42))])",
+  "tpot_version": "1.1.0",
+  "sklearn_version": "1.7.2",
+  "dataset": "corrigido"
+}

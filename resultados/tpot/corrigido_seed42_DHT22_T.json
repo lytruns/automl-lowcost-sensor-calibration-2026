@@ -1,0 +1,69 @@
+{
+  "sensor": "DHT22_T",
+  "target": "temp",
+  "seed": 42,
+  "R2_hold": 0.977538387498527,
+  "MAE_hold": 0.32008839558795377,
+  "RMSE_hold": 0.4337291411839979,
+  "R2_train": 0.9900946823090582,
+  "MAE_train": 0.29401637448841406,
+  "RMSE_train": 0.4538926168078893,
+  "overfit_gap": 0.012556294810531221,
+  "n_generations": 8,
+  "n_evaluated": 400,
+  "history": [
+    {
+      "gen": 0,
+      "best_so_far": 0.911236,
+      "mean": -1.71641,
+      "n": 38
+    },
+    {
+      "gen": 1,
+      "best_so_far": 0.913407,
+      "mean": 0.779415,
+      "n": 47
+    },
+    {
+      "gen": 2,
+      "best_so_far": 0.920244,
+      "mean": -0.02052,
+      "n": 49
+    },
+    {
+      "gen": 3,
+      "best_so_far": 0.92231,
+      "mean": 0.786371,
+      "n": 49
+    },
+    {
+      "gen": 4,
+      "best_so_far": 0.92231,
+      "mean": 0.36413,
+      "n": 49
+    },
+    {
+      "gen": 5,
+      "best_so_far": 0.92231,
+      "mean": -0.073795,
+      "n": 48
+    },
+    {
+      "gen": 6,
+      "best_so_far": 0.92231,
+      "mean": 0.870154,
+      "n": 48
+    },
+    {
+      "gen": 7,
+      "best_so_far": 0.92231,
+      "mean": 0.868482,
+      "n": 47
+    }
+  ],
+  "duration_s": 820.5,
+  "pipeline": "Pipeline(steps=[('maxabsscaler', MaxAbsScaler()),\n                ('passthrough', Passthrough()),\n                ('featureunion',\n                 FeatureUnion(transformer_list=[('featureunion',\n                                                 FeatureUnion(transformer_list=[('columnordinalencoder',\n                                                                                 ColumnOrdinalEncoder())])),\n                                                ('passthrough',\n                                                 Passthrough())])),\n                ('extratreesregressor',\n                 ExtraTreesRegressor(bootstrap=np.False_,\n                                     criterion=np.str_('squared_error'),\n                                     max_features=0.8844714935392,\n                                     min_samples_leaf=2, min_samples_split=9,\n                                     n_jobs=1, random_state=42))])",
+  "tpot_version": "1.1.0",
+  "sklearn_version": "1.7.2",
+  "dataset": "corrigido"
+}

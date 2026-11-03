@@ -1,0 +1,111 @@
+{
+  "sensor": "BME280_U",
+  "target": "umid",
+  "seed": 123,
+  "R2_hold": 0.9140747744262424,
+  "MAE_hold": 2.4648189265473404,
+  "RMSE_hold": 3.0120100398574015,
+  "R2_train": 1.0,
+  "MAE_train": 0.0,
+  "RMSE_train": 0.0,
+  "overfit_gap": 0.08592522557375759,
+  "n_generations": 15,
+  "n_evaluated": 750,
+  "history": [
+    {
+      "gen": 0,
+      "best_so_far": 0.806742,
+      "mean": -1.188178,
+      "n": 43
+    },
+    {
+      "gen": 1,
+      "best_so_far": 0.806742,
+      "mean": 0.027925,
+      "n": 50
+    },
+    {
+      "gen": 2,
+      "best_so_far": 0.825505,
+      "mean": 0.672893,
+      "n": 49
+    },
+    {
+      "gen": 3,
+      "best_so_far": 0.825505,
+      "mean": 0.772638,
+      "n": 50
+    },
+    {
+      "gen": 4,
+      "best_so_far": 0.839262,
+      "mean": 0.504538,
+      "n": 48
+    },
+    {
+      "gen": 5,
+      "best_so_far": 0.839262,
+      "mean": 0.641903,
+      "n": 49
+    },
+    {
+      "gen": 6,
+      "best_so_far": 0.844276,
+      "mean": 0.74647,
+      "n": 46
+    },
+    {
+      "gen": 7,
+      "best_so_far": 0.849663,
+      "mean": 0.772965,
+      "n": 48
+    },
+    {
+      "gen": 8,
+      "best_so_far": 0.852101,
+      "mean": 0.689084,
+      "n": 48
+    },
+    {
+      "gen": 9,
+      "best_so_far": 0.852101,
+      "mean": 0.271043,
+      "n": 50
+    },
+    {
+      "gen": 10,
+      "best_so_far": 0.852101,
+      "mean": 0.770688,
+      "n": 48
+    },
+    {
+      "gen": 11,
+      "best_so_far": 0.853735,
+      "mean": 0.343036,
+      "n": 49
+    },
+    {
+      "gen": 12,
+      "best_so_far": 0.853735,
+      "mean": -3.144219,
+      "n": 49
+    },
+    {
+      "gen": 13,
+      "best_so_far": 0.853735,
+      "mean": 0.583751,
+      "n": 50
+    },
+    {
+      "gen": 14,
+      "best_so_far": 0.853735,
+      "mean": 0.834665,
+      "n": 49
+    }
+  ],
+  "duration_s": 470.1,
+  "pipeline": "Pipeline(steps=[('robustscaler',\n                 RobustScaler(quantile_range=(0.2295547697089,\n                                              0.9359356804507))),\n                ('selectfwe', SelectFwe(alpha=0.0429968229155)),\n                ('featureunion',\n                 FeatureUnion(transformer_list=[('skiptransformer',\n                                                 SkipTransformer()),\n                                                ('passthrough',\n                                                 Passthrough())])),\n                ('kneighborsregressor',\n                 KNeighborsRegressor(n_jobs=1, n_neighbors=40, p=3,\n                                     weights=np.str_('distance')))])",
+  "tpot_version": "1.1.0",
+  "sklearn_version": "1.7.2",
+  "dataset": "corrigido"
+}

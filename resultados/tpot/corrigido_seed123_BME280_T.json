@@ -1,0 +1,111 @@
+{
+  "sensor": "BME280_T",
+  "target": "temp",
+  "seed": 123,
+  "R2_hold": 0.9509424800555811,
+  "MAE_hold": 0.46446352493127563,
+  "RMSE_hold": 0.6409895236978924,
+  "R2_train": 0.9430291248564986,
+  "MAE_train": 0.7658576882585502,
+  "RMSE_train": 1.0885424232053018,
+  "overfit_gap": -0.007913355199082539,
+  "n_generations": 15,
+  "n_evaluated": 750,
+  "history": [
+    {
+      "gen": 0,
+      "best_so_far": 0.884395,
+      "mean": -3.43013,
+      "n": 42
+    },
+    {
+      "gen": 1,
+      "best_so_far": 0.889636,
+      "mean": -0.757035,
+      "n": 47
+    },
+    {
+      "gen": 2,
+      "best_so_far": 0.892897,
+      "mean": -0.670186,
+      "n": 48
+    },
+    {
+      "gen": 3,
+      "best_so_far": 0.892897,
+      "mean": -2.591628,
+      "n": 49
+    },
+    {
+      "gen": 4,
+      "best_so_far": 0.894222,
+      "mean": 0.848848,
+      "n": 50
+    },
+    {
+      "gen": 5,
+      "best_so_far": 0.901294,
+      "mean": -0.658775,
+      "n": 48
+    },
+    {
+      "gen": 6,
+      "best_so_far": 0.905778,
+      "mean": 0.306755,
+      "n": 48
+    },
+    {
+      "gen": 7,
+      "best_so_far": 0.905778,
+      "mean": 0.833553,
+      "n": 50
+    },
+    {
+      "gen": 8,
+      "best_so_far": 0.905778,
+      "mean": 0.846459,
+      "n": 48
+    },
+    {
+      "gen": 9,
+      "best_so_far": 0.905778,
+      "mean": 0.207031,
+      "n": 50
+    },
+    {
+      "gen": 10,
+      "best_so_far": 0.90737,
+      "mean": 0.613943,
+      "n": 48
+    },
+    {
+      "gen": 11,
+      "best_so_far": 0.90737,
+      "mean": -0.111055,
+      "n": 50
+    },
+    {
+      "gen": 12,
+      "best_so_far": 0.909772,
+      "mean": -0.345597,
+      "n": 48
+    },
+    {
+      "gen": 13,
+      "best_so_far": 0.909772,
+      "mean": 0.244862,
+      "n": 49
+    },
+    {
+      "gen": 14,
+      "best_so_far": 0.909772,
+      "mean": 0.836299,
+      "n": 50
+    }
+  ],
+  "duration_s": 745.4,
+  "pipeline": "Pipeline(steps=[('minmaxscaler', MinMaxScaler()),\n                ('rfe',\n                 RFE(estimator=ExtraTreesRegressor(bootstrap=np.True_,\n                                                   criterion=np.str_('poisson'),\n                                                   max_features=0.7559987895663,\n                                                   min_samples_leaf=18,\n                                                   min_samples_split=14,\n                                                   n_jobs=1, random_state=123),\n                     step=0.6874692400599)),\n                ('featureunion',\n                 FeatureUnion(transformer_list=[('featureunion',\n                                                 FeatureUnion(transformer_list=...\n                                                                                 Nystroem(gamma=0.754092037627,\n                                                                                          kernel=np.str_('linear'),\n                                                                                          n_components=1,\n                                                                                          random_state=123))])),\n                                                ('passthrough',\n                                                 Passthrough())])),\n                ('mlpregressor',\n                 MLPRegressor(activation=np.str_('relu'), alpha=1.201235e-07,\n                              early_stopping=np.False_,\n                              hidden_layer_sizes=[154],\n                              learning_rate=np.str_('invscaling'),\n                              learning_rate_init=0.0919720640172,\n                              n_iter_no_change=32, random_state=123))])",
+  "tpot_version": "1.1.0",
+  "sklearn_version": "1.7.2",
+  "dataset": "corrigido"
+}

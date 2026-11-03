@@ -1,0 +1,87 @@
+{
+  "sensor": "BMP180_T",
+  "target": "temp",
+  "seed": 123,
+  "R2_hold": 0.9370905301771375,
+  "MAE_hold": 0.49931195734968487,
+  "RMSE_hold": 0.7258654906437707,
+  "R2_train": 0.9405101326461411,
+  "MAE_train": 0.805728639925244,
+  "RMSE_train": 1.1123473234027847,
+  "overfit_gap": 0.0034196024690036353,
+  "n_generations": 11,
+  "n_evaluated": 550,
+  "history": [
+    {
+      "gen": 0,
+      "best_so_far": 0.880354,
+      "mean": -2.947328,
+      "n": 42
+    },
+    {
+      "gen": 1,
+      "best_so_far": 0.882521,
+      "mean": 0.713744,
+      "n": 50
+    },
+    {
+      "gen": 2,
+      "best_so_far": 0.887084,
+      "mean": 0.242477,
+      "n": 49
+    },
+    {
+      "gen": 3,
+      "best_so_far": 0.887084,
+      "mean": 0.758605,
+      "n": 50
+    },
+    {
+      "gen": 4,
+      "best_so_far": 0.887231,
+      "mean": 0.835924,
+      "n": 49
+    },
+    {
+      "gen": 5,
+      "best_so_far": 0.887231,
+      "mean": -0.041711,
+      "n": 49
+    },
+    {
+      "gen": 6,
+      "best_so_far": 0.889461,
+      "mean": 0.837966,
+      "n": 48
+    },
+    {
+      "gen": 7,
+      "best_so_far": 0.889461,
+      "mean": 0.75176,
+      "n": 50
+    },
+    {
+      "gen": 8,
+      "best_so_far": 0.889461,
+      "mean": 0.65868,
+      "n": 48
+    },
+    {
+      "gen": 9,
+      "best_so_far": 0.889461,
+      "mean": 0.01496,
+      "n": 48
+    },
+    {
+      "gen": 10,
+      "best_so_far": 0.889461,
+      "mean": -2.040872,
+      "n": 14
+    }
+  ],
+  "duration_s": 1222.9,
+  "pipeline": "Pipeline(steps=[('robustscaler',\n                 RobustScaler(quantile_range=(0.2609258505254,\n                                              0.7242886841931))),\n                ('rfe',\n                 RFE(estimator=ExtraTreesRegressor(bootstrap=np.False_,\n                                                   criterion=np.str_('poisson'),\n                                                   max_features=0.8294117016106,\n                                                   min_samples_leaf=14,\n                                                   min_samples_split=9,\n                                                   n_jobs=1, random_state=123),\n                     step=0.2629018957642)),\n                ('featureunion',\n                 FeatureUnion(transformer_list=[('skiptransformer',\n                                                 SkipTransformer()),\n                                                ('passthrough',\n                                                 Passthrough())])),\n                ('mlpregressor',\n                 MLPRegressor(activation=np.str_('tanh'), alpha=9.92067046e-05,\n                              early_stopping=np.False_,\n                              hidden_layer_sizes=[333, 333, 333],\n                              learning_rate=np.str_('adaptive'),\n                              learning_rate_init=0.00022019764,\n                              n_iter_no_change=32, random_state=123))])",
+  "tpot_version": "1.1.0",
+  "sklearn_version": "1.7.2",
+  "dataset": "corrigido"
+}

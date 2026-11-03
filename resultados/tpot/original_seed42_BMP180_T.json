@@ -1,0 +1,81 @@
+{
+  "sensor": "BMP180_T",
+  "target": "temp",
+  "seed": 42,
+  "R2_hold": 0.8431678336396257,
+  "MAE_hold": 0.8288810986349338,
+  "RMSE_hold": 1.1460820422479576,
+  "R2_train": 0.9177137260736228,
+  "MAE_train": 1.0340880034928175,
+  "RMSE_train": 1.318017188491446,
+  "overfit_gap": 0.07454589243399712,
+  "n_generations": 10,
+  "n_evaluated": 500,
+  "history": [
+    {
+      "gen": 0,
+      "best_so_far": 0.793835,
+      "mean": -2.954816,
+      "n": 36
+    },
+    {
+      "gen": 1,
+      "best_so_far": 0.818001,
+      "mean": 0.612475,
+      "n": 47
+    },
+    {
+      "gen": 2,
+      "best_so_far": 0.818001,
+      "mean": -0.289671,
+      "n": 48
+    },
+    {
+      "gen": 3,
+      "best_so_far": 0.820059,
+      "mean": 0.701906,
+      "n": 49
+    },
+    {
+      "gen": 4,
+      "best_so_far": 0.824126,
+      "mean": 0.663653,
+      "n": 49
+    },
+    {
+      "gen": 5,
+      "best_so_far": 0.827158,
+      "mean": 0.785437,
+      "n": 49
+    },
+    {
+      "gen": 6,
+      "best_so_far": 0.827158,
+      "mean": 0.607972,
+      "n": 44
+    },
+    {
+      "gen": 7,
+      "best_so_far": 0.827158,
+      "mean": 0.651547,
+      "n": 46
+    },
+    {
+      "gen": 8,
+      "best_so_far": 0.827174,
+      "mean": -0.117936,
+      "n": 47
+    },
+    {
+      "gen": 9,
+      "best_so_far": 0.827174,
+      "mean": -0.736243,
+      "n": 48
+    }
+  ],
+  "duration_s": 502.6,
+  "pipeline": "Pipeline(steps=[('standardscaler', StandardScaler()),\n                ('selectfwe', SelectFwe(alpha=0.0007305953944)),\n                ('featureunion',\n                 FeatureUnion(transformer_list=[('skiptransformer',\n                                                 SkipTransformer()),\n                                                ('passthrough',\n                                                 Passthrough())])),\n                ('adaboostregressor',\n                 AdaBoostRegressor(learning_rate=0.1837277724887,\n                                   loss=np.str_('square'), n_estimators=152,\n                                   random_state=42))])",
+  "tpot_version": "1.1.0",
+  "sklearn_version": "1.7.2",
+  "dataset": "original"
+}

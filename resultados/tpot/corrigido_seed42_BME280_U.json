@@ -1,0 +1,87 @@
+{
+  "sensor": "BME280_U",
+  "target": "umid",
+  "seed": 42,
+  "R2_hold": 0.9064987574391323,
+  "MAE_hold": 2.5261134024136,
+  "RMSE_hold": 3.141989764046953,
+  "R2_train": 1.0,
+  "MAE_train": 9.274368982289933e-14,
+  "RMSE_train": 1.36935809283872e-13,
+  "overfit_gap": 0.09350124256086767,
+  "n_generations": 11,
+  "n_evaluated": 550,
+  "history": [
+    {
+      "gen": 0,
+      "best_so_far": 0.817761,
+      "mean": -1.349321,
+      "n": 41
+    },
+    {
+      "gen": 1,
+      "best_so_far": 0.829843,
+      "mean": 0.405506,
+      "n": 50
+    },
+    {
+      "gen": 2,
+      "best_so_far": 0.839127,
+      "mean": 0.758206,
+      "n": 49
+    },
+    {
+      "gen": 3,
+      "best_so_far": 0.839127,
+      "mean": 0.118401,
+      "n": 48
+    },
+    {
+      "gen": 4,
+      "best_so_far": 0.844826,
+      "mean": 0.771901,
+      "n": 50
+    },
+    {
+      "gen": 5,
+      "best_so_far": 0.844826,
+      "mean": 0.780075,
+      "n": 49
+    },
+    {
+      "gen": 6,
+      "best_so_far": 0.853035,
+      "mean": 0.794605,
+      "n": 46
+    },
+    {
+      "gen": 7,
+      "best_so_far": 0.853737,
+      "mean": 0.227341,
+      "n": 48
+    },
+    {
+      "gen": 8,
+      "best_so_far": 0.853737,
+      "mean": 0.779931,
+      "n": 48
+    },
+    {
+      "gen": 9,
+      "best_so_far": 0.853737,
+      "mean": 0.401405,
+      "n": 49
+    },
+    {
+      "gen": 10,
+      "best_so_far": 0.853737,
+      "mean": 0.571531,
+      "n": 48
+    }
+  ],
+  "duration_s": 376.2,
+  "pipeline": "Pipeline(steps=[('robustscaler',\n                 RobustScaler(quantile_range=(0.1822491419572,\n                                              0.9638134045522))),\n                ('selectfrommodel',\n                 SelectFromModel(estimator=ExtraTreesRegressor(bootstrap=np.True_,\n                                                               criterion=np.str_('squared_error'),\n                                                               max_features=0.0639754434432,\n                                                               min_samples_leaf=4,\n                                                               min_samples_split=4,\n                                                               n_jobs=1,\n                                                               random_state=42),\n                                 threshold=0.0769669959812)),\n                ('featureunion',\n                 FeatureUnion(transformer_list=[('featureunion',\n                                                 FeatureUnion(transformer_list=[('fastica',\n                                                                                 FastICA(algorithm=np.str_('parallel'),\n                                                                                         n_components=40,\n                                                                                         random_state=42))])),\n                                                ('passthrough',\n                                                 Passthrough())])),\n                ('kneighborsregressor',\n                 KNeighborsRegressor(n_jobs=1, n_neighbors=46, p=3,\n                                     weights=np.str_('distance')))])",
+  "tpot_version": "1.1.0",
+  "sklearn_version": "1.7.2",
+  "dataset": "corrigido"
+}

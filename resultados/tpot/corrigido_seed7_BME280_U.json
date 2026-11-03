@@ -1,0 +1,63 @@
+{
+  "sensor": "BME280_U",
+  "target": "umid",
+  "seed": 7,
+  "R2_hold": 0.9130738790592594,
+  "MAE_hold": 2.456687547207067,
+  "RMSE_hold": 3.029501867629291,
+  "R2_train": 1.0,
+  "MAE_train": 0.0,
+  "RMSE_train": 0.0,
+  "overfit_gap": 0.08692612094074059,
+  "n_generations": 7,
+  "n_evaluated": 350,
+  "history": [
+    {
+      "gen": 0,
+      "best_so_far": 0.840356,
+      "mean": 0.527549,
+      "n": 44
+    },
+    {
+      "gen": 1,
+      "best_so_far": 0.846515,
+      "mean": 0.581094,
+      "n": 47
+    },
+    {
+      "gen": 2,
+      "best_so_far": 0.851977,
+      "mean": 0.285187,
+      "n": 46
+    },
+    {
+      "gen": 3,
+      "best_so_far": 0.851977,
+      "mean": 0.77952,
+      "n": 49
+    },
+    {
+      "gen": 4,
+      "best_so_far": 0.851977,
+      "mean": 0.798637,
+      "n": 50
+    },
+    {
+      "gen": 5,
+      "best_so_far": 0.851977,
+      "mean": 0.799465,
+      "n": 49
+    },
+    {
+      "gen": 6,
+      "best_so_far": 0.851977,
+      "mean": 0.783633,
+      "n": 46
+    }
+  ],
+  "duration_s": 188.5,
+  "pipeline": "Pipeline(steps=[('robustscaler',\n                 RobustScaler(quantile_range=(0.190676140585,\n                                              0.9257609263679))),\n                ('variancethreshold',\n                 VarianceThreshold(threshold=0.0186057758053)),\n                ('featureunion',\n                 FeatureUnion(transformer_list=[('featureunion',\n                                                 FeatureUnion(transformer_list=[('zerocount',\n                                                                                 ZeroCount())])),\n                                                ('passthrough',\n                                                 Passthrough())])),\n                ('kneighborsregressor',\n                 KNeighborsRegressor(n_jobs=1, n_neighbors=42,\n                                     weights=np.str_('distance')))])",
+  "tpot_version": "1.1.0",
+  "sklearn_version": "1.7.2",
+  "dataset": "corrigido"
+}

@@ -1,0 +1,81 @@
+{
+  "sensor": "DHT11_T",
+  "target": "temp",
+  "seed": 123,
+  "R2_hold": 0.9481091230269821,
+  "MAE_hold": 0.5137326440133677,
+  "RMSE_hold": 0.6592401388534027,
+  "R2_train": 0.9993654537827649,
+  "MAE_train": 0.0432921464382917,
+  "RMSE_train": 0.11488161799910254,
+  "overfit_gap": 0.05125633075578273,
+  "n_generations": 10,
+  "n_evaluated": 500,
+  "history": [
+    {
+      "gen": 0,
+      "best_so_far": 0.917782,
+      "mean": -1.69698,
+      "n": 43
+    },
+    {
+      "gen": 1,
+      "best_so_far": 0.922336,
+      "mean": 0.68015,
+      "n": 50
+    },
+    {
+      "gen": 2,
+      "best_so_far": 0.922336,
+      "mean": 0.840824,
+      "n": 50
+    },
+    {
+      "gen": 3,
+      "best_so_far": 0.922336,
+      "mean": 0.642745,
+      "n": 50
+    },
+    {
+      "gen": 4,
+      "best_so_far": 0.922535,
+      "mean": 0.89943,
+      "n": 48
+    },
+    {
+      "gen": 5,
+      "best_so_far": 0.923734,
+      "mean": 0.184822,
+      "n": 49
+    },
+    {
+      "gen": 6,
+      "best_so_far": 0.923734,
+      "mean": 0.872254,
+      "n": 50
+    },
+    {
+      "gen": 7,
+      "best_so_far": 0.923734,
+      "mean": 0.844542,
+      "n": 48
+    },
+    {
+      "gen": 8,
+      "best_so_far": 0.923734,
+      "mean": 0.727286,
+      "n": 46
+    },
+    {
+      "gen": 9,
+      "best_so_far": 0.923734,
+      "mean": 0.884105,
+      "n": 48
+    }
+  ],
+  "duration_s": 728.8,
+  "pipeline": "Pipeline(steps=[('robustscaler',\n                 RobustScaler(quantile_range=(0.0254043043562,\n                                              0.8517787484768))),\n                ('selectfwe', SelectFwe(alpha=0.0009020070613)),\n                ('featureunion',\n                 FeatureUnion(transformer_list=[('skiptransformer',\n                                                 SkipTransformer()),\n                                                ('passthrough',\n                                                 Passthrough())])),\n                ('kneighborsregressor',\n                 KNeighborsRegressor(n_jobs=1, n_neighbors=25,\n                                     weights=np.str_('distance')))])",
+  "tpot_version": "1.1.0",
+  "sklearn_version": "1.7.2",
+  "dataset": "corrigido"
+}

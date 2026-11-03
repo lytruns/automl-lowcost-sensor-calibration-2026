@@ -1,0 +1,51 @@
+{
+  "sensor": "DHT22_T",
+  "target": "temp",
+  "seed": 7,
+  "R2_hold": 0.9580738672387523,
+  "MAE_hold": 0.43178952350614547,
+  "RMSE_hold": 0.5925711991398885,
+  "R2_train": 0.9861189461101924,
+  "MAE_train": 0.36569660290182743,
+  "RMSE_train": 0.5373164465681363,
+  "overfit_gap": 0.028045078871440032,
+  "n_generations": 5,
+  "n_evaluated": 250,
+  "history": [
+    {
+      "gen": 0,
+      "best_so_far": 0.922612,
+      "mean": 0.699975,
+      "n": 42
+    },
+    {
+      "gen": 1,
+      "best_so_far": 0.922612,
+      "mean": 0.800862,
+      "n": 47
+    },
+    {
+      "gen": 2,
+      "best_so_far": 0.922612,
+      "mean": 0.84764,
+      "n": 47
+    },
+    {
+      "gen": 3,
+      "best_so_far": 0.922754,
+      "mean": 0.855378,
+      "n": 47
+    },
+    {
+      "gen": 4,
+      "best_so_far": 0.922754,
+      "mean": 0.893106,
+      "n": 48
+    }
+  ],
+  "duration_s": 175.5,
+  "pipeline": "Pipeline(steps=[('robustscaler',\n                 RobustScaler(quantile_range=(0.1670262066198,\n                                              0.7948425753871))),\n                ('variancethreshold',\n                 VarianceThreshold(threshold=0.0006675550366)),\n                ('featureunion',\n                 FeatureUnion(transformer_list=[('featureunion',\n                                                 FeatureUnion(transformer_list=[('nystroem',\n                                                                                 Nystroem(gamma=0.9129459326911,\n                                                                                          kernel=np.str_('poly'),\n                                                                                          n_components=54,\n                                                                                          random_state=7))])),\n                                                ('passthrough',\n                                                 Passthrough())])),\n                ('lgbmregressor',\n                 LGBMRegressor(boosting_type=np.str_('gbdt'), max_depth=7,\n                               n_estimators=49, n_jobs=1, num_leaves=7,\n                               random_state=7, verbose=-1))])",
+  "tpot_version": "1.1.0",
+  "sklearn_version": "1.7.2",
+  "dataset": "corrigido"
+}

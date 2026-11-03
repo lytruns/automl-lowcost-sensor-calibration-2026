@@ -1,0 +1,111 @@
+{
+  "sensor": "BMP180_T",
+  "target": "temp",
+  "seed": 42,
+  "R2_hold": 0.9360970248586508,
+  "MAE_hold": 0.4512105126860209,
+  "RMSE_hold": 0.7315746968553267,
+  "R2_train": 0.9999999973139806,
+  "MAE_train": 1.1173184360548567e-05,
+  "RMSE_train": 0.00023635972962356968,
+  "overfit_gap": 0.06390297245532983,
+  "n_generations": 15,
+  "n_evaluated": 750,
+  "history": [
+    {
+      "gen": 0,
+      "best_so_far": 0.878791,
+      "mean": -1.748899,
+      "n": 38
+    },
+    {
+      "gen": 1,
+      "best_so_far": 0.887903,
+      "mean": 0.745793,
+      "n": 45
+    },
+    {
+      "gen": 2,
+      "best_so_far": 0.891599,
+      "mean": 0.838787,
+      "n": 50
+    },
+    {
+      "gen": 3,
+      "best_so_far": 0.891599,
+      "mean": 0.78894,
+      "n": 50
+    },
+    {
+      "gen": 4,
+      "best_so_far": 0.89265,
+      "mean": 0.713269,
+      "n": 48
+    },
+    {
+      "gen": 5,
+      "best_so_far": 0.893263,
+      "mean": 0.867294,
+      "n": 46
+    },
+    {
+      "gen": 6,
+      "best_so_far": 0.893263,
+      "mean": 0.869581,
+      "n": 49
+    },
+    {
+      "gen": 7,
+      "best_so_far": 0.893263,
+      "mean": 0.799339,
+      "n": 47
+    },
+    {
+      "gen": 8,
+      "best_so_far": 0.896001,
+      "mean": 0.763421,
+      "n": 50
+    },
+    {
+      "gen": 9,
+      "best_so_far": 0.896149,
+      "mean": -0.838893,
+      "n": 49
+    },
+    {
+      "gen": 10,
+      "best_so_far": 0.896149,
+      "mean": -0.072921,
+      "n": 47
+    },
+    {
+      "gen": 11,
+      "best_so_far": 0.897554,
+      "mean": 0.84404,
+      "n": 50
+    },
+    {
+      "gen": 12,
+      "best_so_far": 0.897784,
+      "mean": 0.870224,
+      "n": 50
+    },
+    {
+      "gen": 13,
+      "best_so_far": 0.897784,
+      "mean": 0.856708,
+      "n": 46
+    },
+    {
+      "gen": 14,
+      "best_so_far": 0.897784,
+      "mean": -4.765775,
+      "n": 46
+    }
+  ],
+  "duration_s": 610.8,
+  "pipeline": "Pipeline(steps=[('robustscaler',\n                 RobustScaler(quantile_range=(0.1355770658289,\n                                              0.9971406873341))),\n                ('selectfwe', SelectFwe(alpha=0.0021470629256)),\n                ('featureunion',\n                 FeatureUnion(transformer_list=[('featureunion',\n                                                 FeatureUnion(transformer_list=[('powertransformer',\n                                                                                 PowerTransformer()),\n                                                                                ('fastica',\n                                                                                 FastICA(algorithm=np.str_('parallel'),\n                                                                                         n_components=7,\n                                                                                         random_state=42))])),\n                                                ('passthrough',\n                                                 Passthrough())])),\n                ('kneighborsregressor',\n                 KNeighborsRegressor(n_jobs=1, n_neighbors=20, p=3,\n                                     weights=np.str_('distance')))])",
+  "tpot_version": "1.1.0",
+  "sklearn_version": "1.7.2",
+  "dataset": "corrigido"
+}

@@ -1,0 +1,81 @@
+{
+  "sensor": "DHT22_U",
+  "target": "umid",
+  "seed": 42,
+  "R2_hold": 0.22355069335133526,
+  "MAE_hold": 8.175358933240648,
+  "RMSE_hold": 9.054253046877058,
+  "R2_train": 0.7647711706478464,
+  "MAE_train": 5.907368370557704,
+  "RMSE_train": 7.509613221502304,
+  "overfit_gap": 0.5412204772965111,
+  "n_generations": 10,
+  "n_evaluated": 500,
+  "history": [
+    {
+      "gen": 0,
+      "best_so_far": 0.686449,
+      "mean": -1.848676,
+      "n": 41
+    },
+    {
+      "gen": 1,
+      "best_so_far": 0.69028,
+      "mean": -0.78933,
+      "n": 50
+    },
+    {
+      "gen": 2,
+      "best_so_far": 0.701737,
+      "mean": 0.475154,
+      "n": 50
+    },
+    {
+      "gen": 3,
+      "best_so_far": 0.701737,
+      "mean": 0.34994,
+      "n": 47
+    },
+    {
+      "gen": 4,
+      "best_so_far": 0.701737,
+      "mean": 0.59262,
+      "n": 50
+    },
+    {
+      "gen": 5,
+      "best_so_far": 0.736269,
+      "mean": 0.036012,
+      "n": 47
+    },
+    {
+      "gen": 6,
+      "best_so_far": 0.736269,
+      "mean": -0.081452,
+      "n": 50
+    },
+    {
+      "gen": 7,
+      "best_so_far": 0.736269,
+      "mean": 0.23668,
+      "n": 50
+    },
+    {
+      "gen": 8,
+      "best_so_far": 0.736269,
+      "mean": -0.862757,
+      "n": 50
+    },
+    {
+      "gen": 9,
+      "best_so_far": 0.736269,
+      "mean": 0.642874,
+      "n": 50
+    }
+  ],
+  "duration_s": 358.4,
+  "pipeline": "Pipeline(steps=[('minmaxscaler', MinMaxScaler()),\n                ('variancethreshold',\n                 VarianceThreshold(threshold=0.001250640643)),\n                ('featureunion',\n                 FeatureUnion(transformer_list=[('skiptransformer',\n                                                 SkipTransformer()),\n                                                ('passthrough',\n                                                 Passthrough())])),\n                ('linearsvr',\n                 LinearSVR(C=8483.203067396673, epsilon=0.0190906075378,\n                           loss=np.str_('epsilon_insensitive'),\n                           random_state=42))])",
+  "tpot_version": "1.1.0",
+  "sklearn_version": "1.7.2",
+  "dataset": "original"
+}

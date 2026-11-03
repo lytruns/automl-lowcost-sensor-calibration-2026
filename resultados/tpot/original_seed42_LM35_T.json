@@ -1,0 +1,63 @@
+{
+  "sensor": "LM35_T",
+  "target": "temp",
+  "seed": 42,
+  "R2_hold": 0.6956139420854002,
+  "MAE_hold": 1.4087006954597487,
+  "RMSE_hold": 1.5966529032505394,
+  "R2_train": 0.8959286026401525,
+  "MAE_train": 1.2863309263533471,
+  "RMSE_train": 1.482255492736881,
+  "overfit_gap": 0.20031466055475233,
+  "n_generations": 7,
+  "n_evaluated": 350,
+  "history": [
+    {
+      "gen": 0,
+      "best_so_far": 0.800072,
+      "mean": -1.930415,
+      "n": 38
+    },
+    {
+      "gen": 1,
+      "best_so_far": 0.800072,
+      "mean": 0.606401,
+      "n": 47
+    },
+    {
+      "gen": 2,
+      "best_so_far": 0.810217,
+      "mean": 0.762886,
+      "n": 50
+    },
+    {
+      "gen": 3,
+      "best_so_far": 0.810217,
+      "mean": 0.702427,
+      "n": 49
+    },
+    {
+      "gen": 4,
+      "best_so_far": 0.810217,
+      "mean": -88.393232,
+      "n": 48
+    },
+    {
+      "gen": 5,
+      "best_so_far": 0.810397,
+      "mean": 0.782644,
+      "n": 48
+    },
+    {
+      "gen": 6,
+      "best_so_far": 0.810397,
+      "mean": 0.565297,
+      "n": 49
+    }
+  ],
+  "duration_s": 286.1,
+  "pipeline": "Pipeline(steps=[('robustscaler',\n                 RobustScaler(quantile_range=(0.1581444128271,\n                                              0.9161374210067))),\n                ('selectfwe', SelectFwe(alpha=0.0121681018645)),\n                ('featureunion',\n                 FeatureUnion(transformer_list=[('skiptransformer',\n                                                 SkipTransformer()),\n                                                ('passthrough',\n                                                 Passthrough())])),\n                ('adaboostregressor',\n                 AdaBoostRegressor(learning_rate=0.8854746457272,\n                                   loss=np.str_('exponential'),\n                                   n_estimators=476, random_state=42))])",
+  "tpot_version": "1.1.0",
+  "sklearn_version": "1.7.2",
+  "dataset": "original"
+}

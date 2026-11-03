@@ -1,0 +1,38 @@
+{
+  "station_rows": 1133,
+  "station_start": "2018-11-11 12:00:00",
+  "station_end": "2018-11-15 10:20:00",
+  "device_A_raw_rows": 167432,
+  "device_B_raw_rows": 167417,
+  "device_C_raw_rows": 140283,
+  "dataset_original_5min": {
+    "offset_s": 0,
+    "rows": 1119,
+    "dropped": 14,
+    "start": "2018-11-11 12:00:00",
+    "end": "2018-11-15 10:20:00",
+    "temp_range": [
+      19.26,
+      36.91
+    ],
+    "rh_range": [
+      36.02,
+      89.7
+    ]
+  },
+  "dataset_corrigido_5min": {
+    "offset_s": 3600,
+    "rows": 1119,
+    "dropped": 14,
+    "start": "2018-11-11 12:00:00",
+    "end": "2018-11-15 10:20:00",
+    "temp_range": [
+      19.26,
+      36.91
+    ],
+    "rh_range": [
+      36.02,
+      89.7
+    ]
+  }
+}

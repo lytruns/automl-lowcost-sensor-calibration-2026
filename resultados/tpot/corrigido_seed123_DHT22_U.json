@@ -1,0 +1,69 @@
+{
+  "sensor": "DHT22_U",
+  "target": "umid",
+  "seed": 123,
+  "R2_hold": 0.9460742867112499,
+  "MAE_hold": 1.9135902539464915,
+  "RMSE_hold": 2.3861295761099233,
+  "R2_train": 1.0,
+  "MAE_train": 0.0,
+  "RMSE_train": 0.0,
+  "overfit_gap": 0.053925713288750066,
+  "n_generations": 8,
+  "n_evaluated": 400,
+  "history": [
+    {
+      "gen": 0,
+      "best_so_far": 0.874415,
+      "mean": -1.280751,
+      "n": 43
+    },
+    {
+      "gen": 1,
+      "best_so_far": 0.877179,
+      "mean": 0.11901,
+      "n": 50
+    },
+    {
+      "gen": 2,
+      "best_so_far": 0.877179,
+      "mean": 0.792627,
+      "n": 49
+    },
+    {
+      "gen": 3,
+      "best_so_far": 0.888222,
+      "mean": 0.821628,
+      "n": 49
+    },
+    {
+      "gen": 4,
+      "best_so_far": 0.888551,
+      "mean": 0.813395,
+      "n": 49
+    },
+    {
+      "gen": 5,
+      "best_so_far": 0.888551,
+      "mean": 0.67204,
+      "n": 49
+    },
+    {
+      "gen": 6,
+      "best_so_far": 0.888551,
+      "mean": 0.854913,
+      "n": 45
+    },
+    {
+      "gen": 7,
+      "best_so_far": 0.88897,
+      "mean": 0.182047,
+      "n": 46
+    }
+  ],
+  "duration_s": 323.5,
+  "pipeline": "Pipeline(steps=[('passthrough', Passthrough()),\n                ('variancethreshold',\n                 VarianceThreshold(threshold=0.0132213031101)),\n                ('featureunion',\n                 FeatureUnion(transformer_list=[('skiptransformer',\n                                                 SkipTransformer()),\n                                                ('passthrough',\n                                                 Passthrough())])),\n                ('kneighborsregressor',\n                 KNeighborsRegressor(n_jobs=1, n_neighbors=25,\n                                     weights=np.str_('distance')))])",
+  "tpot_version": "1.1.0",
+  "sklearn_version": "1.7.2",
+  "dataset": "corrigido"
+}

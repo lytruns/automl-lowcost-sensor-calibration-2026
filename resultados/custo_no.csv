@@ -1,0 +1,6 @@
+group,brl_per_node,n_items,usd_per_node
+"Sensor board (ESP32-WROOM-32D, BME280, LoRa1276F30-915 module with antenna, passives, connectors)",206.10,9,38.02
+"Power board (LM2596, MP1584, LD1117, 8205A MOSFETs, TEMT6000, GUVA-S12SD, MCP6001, passives)",134.88,34,24.88
+"Other sensors (BMP180, DHT11, DHT22, LM35 modules)",59.98,4,11.06
+Sensor-board PCB fabrication and DS1307 RTC module,12.51,2,2.31
+"Power supply (40 W panel kit with controller; two 18650 cells of 2,200 mAh)",207.61,2,38.30
